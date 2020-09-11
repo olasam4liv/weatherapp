@@ -1,0 +1,39 @@
+{
+    "short_name": "WeatherApp",
+    "name": "WeatherApp: This is to fetch weather condition of diffrent cities all over the world",
+    "description": "Weather forecast information",
+    "icons": [
+      {
+        "src": "images/icons/weather-logo.jpg",
+        "type": "image/png",
+        "sizes": "138x138"
+      },
+      {
+        "src": "images/icons/weather-logo1.jpg",
+        "type": "image/png",
+        "sizes": "123x123"
+      }
+    ],
+    "start_url": "/?source=index.html",
+    "background_color": "#92bde7",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#92bde7",
+    "orientation": "portrait-primary",
+    "shortcuts": [
+      {
+        "name": "How's weather today?",
+        "short_name": "Today",
+        "description": "View weather information for today",
+        "url": "/today?source=index1.html",
+        "icons": [{ "src": "images/icons/weather-logo.jpg", "sizes": "138x138" }]
+      },
+      {
+        "name": "How's weather tomorrow?",
+        "short_name": "Tomorrow",
+        "description": "View weather information for tomorrow",
+        "url": "/index1.html",
+        "icons": [{ "src": "images/icons/weather-logo1.jpg", "sizes": "123x123" }]
+      }
+    ]
+  }

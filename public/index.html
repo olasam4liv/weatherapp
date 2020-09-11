@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weather App by Sam</title>
+  <link rel="icon" type="image/png" href="images/icons/favicon.png"/>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="">
+  <div class="container">
+    <h1 class="brand"><span>Weather</span> App</h1>
+    <div class="wrapper animated bounceInLeft">
+      
+      <div class="info">
+        <h3>By Samuel Olatunji</h3>
+        <ul>
+          <li> Gads Pre-Project</li>           
+        </ul>
+      </div>
+
+      <div class="contact">         
+            
+               
+        <form id="searchForm">
+            <strong><span class="error"></span>
+          <p  > 
+            <input onkeyup="" type="text" id="inputValue" placeholder="Enter a City">           
+            <button type="button" onclick="" class="btnSearch">Search</button>
+           
+          </p>          
+        <h3 style="font-size:1em">Recently Searched City Weather Results</h3>
+        <p class="name"></p>
+        <p class="desc"></p>
+        <p class="temp"></p>
+        </form>
+        
+         
+        <table class="resultTable">
+          <thead>
+            <tr>
+              <th>City</th>
+              <th>Description </th>
+              <th>Temperature</th>               
+            </tr>
+          </thead>  
+          <tbody>
+             
+          </tbody>
+
+           
+        </table>  
+
+      </div>
+    </div>
+  </div>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAeW1H95ADiH3qoRe9kHyw49QSvMRVSEDw",
+    authDomain: "weatherapp-3d009.firebaseapp.com",
+    databaseURL: "https://weatherapp-3d009.firebaseio.com",
+    projectId: "weatherapp-3d009",
+    storageBucket: "weatherapp-3d009.appspot.com",
+    messagingSenderId: "568464243572",
+    appId: "1:568464243572:web:9ca5e1e11d00be914f8a21",
+    measurementId: "G-6NLCDCNLS0"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
